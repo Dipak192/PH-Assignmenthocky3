@@ -1,133 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hocky</title>
     <!-- tailwind CDN -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- manrope font  -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- basic css style -->
-<style>
-    .manrope{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
-<!-- Daisy ui component cdn link -->
-
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- tailwind custom configeration -->
-
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            primaryc: '#424247',
-            seconderyc: '#FF4240',
-            thirdc: '#131318',
-            
-          }
-        }
+    <!-- basic css style -->
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
       }
-    }
-  </script>
+    </style>
+    <!-- Daisy ui component cdn link -->
 
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom configeration -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primaryc: "#424247",
+              seconderyc: "#FF4240",
+              thirdc: "#131318",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
     <header class="container mx-auto mt-5">
-        <!-- navbar section  -->
-        <div class="navbar bg-base-100 ">
-            <div class="navbar-start">
-              <div class="dropdown lg:hidden md:hidden">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                </div>
-                <ul  tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-primaryc text-base font-manrope font-normal">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-                
-              </div>
-              <div class="text-thirdc lg:text-4xl md:text-4xl text-2xl font-extrabold font-manrope ">Hockey<span class="text-red-500">'</span>s</div>
+      <!-- navbar section  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown lg:hidden md:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
             </div>
-            <div class="navbar-center hidden md:flex text-primaryc text-base font-manrope font-normal">
-              <a class="btn btn-ghost ">Home</a>
-              <a class="btn btn-ghost ">About</a>
-              <a class="btn btn-ghost ">Pages</a>
-              <a class="btn btn-ghost ">Blog</a>
-              <a class="btn btn-ghost ">Contact</a>
-            </div>
-            <div class="navbar-end">
-              <button class="btn btn-ghost btn-circle hidden md:flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              </button>
-              <button class="btn btn-ghost  bg-seconderyc text-white font-manrope font-bold lg:text-xl md:text-xl py-2">
-                Get Ticket
-              </button>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-primaryc text-base font-manrope font-normal"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div
+            class="text-thirdc lg:text-4xl md:text-4xl text-2xl font-extrabold font-manrope"
+          >
+            Hockey<span class="text-red-500">'</span>s
+          </div>
+        </div>
+        <div
+          class="navbar-center hidden md:flex text-primaryc text-base font-manrope font-normal"
+        >
+          <a class="btn btn-ghost">Home</a>
+          <a class="btn btn-ghost">About</a>
+          <a class="btn btn-ghost">Pages</a>
+          <a class="btn btn-ghost">Blog</a>
+          <a class="btn btn-ghost">Contact</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle hidden md:flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn btn-ghost bg-seconderyc text-white font-manrope font-bold lg:text-xl md:text-xl py-2"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </div>
+      <!-- corousel banner section -->
+      <div class="lg:mt-10 md:mt-10">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute left-4 bottom-4 space-x-2">
+              <a href="#slide4" class="btn btn-circle bg-thirdc">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-thirdc">❯</a>
             </div>
           </div>
-          <!-- corousel banner section -->
-         <div class="lg:mt-10 md:mt-10">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./Images/1.png" class="w-full" />
-                  <div class="absolute left-4 bottom-4 space-x-2">
-                    <a href="#slide4" class="btn btn-circle bg-thirdc">❮</a> 
-                    <a href="#slide2" class="btn btn-circle bg-thirdc ">❯</a>
-                  </div>
-                
-    
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute left-4 bottom-4 space-x-2 ">
-                    <a href="#slide1" class="btn btn-circle bg-thirdc">❮</a> 
-                    <a href="#slide3" class="btn btn-circle bg-thirdc">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute left-4 bottom-4 space-x-2 ">
-                    <a href="#slide2" class="btn btn-circle bg-thirdc">❮</a> 
-                    <a href="#slide4" class="btn btn-circle bg-thirdc">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute left-4 bottom-4 space-x-2 ">
-                    <a href="#slide3" class="btn btn-circle bg-thirdc">❮</a> 
-                    <a href="#slide1" class="btn btn-circle bg-thirdc">❯</a>
-                  </div>
-                 </div>
-                
-    
-               
-              </div>
-             
-         </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute left-4 bottom-4 space-x-2">
+              <a href="#slide1" class="btn btn-circle bg-thirdc">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-thirdc">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute left-4 bottom-4 space-x-2">
+              <a href="#slide2" class="btn btn-circle bg-thirdc">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-thirdc">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute left-4 bottom-4 space-x-2">
+              <a href="#slide3" class="btn btn-circle bg-thirdc">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-thirdc">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- professional hocky club section -->
+      <div
+        class="mt-5 border-t border-b border-dashed border-gray-300 space-y-2"
+      >
+        <h1
+          class="text-thirdc font-extrabold font-manrope text-4xl text-center my-2"
+        >
+          Professional Hockeys Club
+        </h1>
+        <p
+          class="text-thirdc font-manrope text-lg font-medium text-center pb-2"
+        >
+          The professional hockey club stands as a symbol of dedication and
+          excellence on the ice, embodying the spirit of teamwork and skill.
+        </p>
+      </div>
+      <!-- circle percentence section -->
+     <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 justify-around space-y-2 mt-6">
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 lg:w-32 lg:h-32  rounded-full overflow-hidden mb-2">
+          <div class="bg-cover bg-center h-full" style="background-image: url('./Images/c1.png');">
+            <p class="text-thirdc font-manrope text-xl font-medium lg:text-3xl lg:font-extrabold text-center flex items-center justify-center h-full">
+              87%
+            </p></div>
          
+        </div>
+        <h1 class="text-center text-thirdc font-manrope text-xl font-semibold ">Prayer Facility</h1>
+        <p class="text-center text-thirdc font-manrope text-lg text-base">There has a suitable and clean prayer room</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 lg:w-32 lg:h-32  rounded-full overflow-hidden mb-2">
+          <div class="bg-cover bg-center h-full" style="background-image: url('./Images/c2.png');">
+            <p class="text-thirdc font-manrope text-xl font-medium lg:text-3xl lg:font-extrabold text-center flex items-center justify-center h-full">
+              95%
+            </p></div>
+         
+        </div>
+        <h1 class="text-center text-thirdc font-manrope text-xl font-semibold ">Experienced Coach</h1>
+        <p class="text-center text-thirdc font-manrope text-lg text-base">More than 25  well-trained Experienced and helpful trainers available here</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 lg:w-32 lg:h-32  rounded-full overflow-hidden mb-2">
+          <div class="bg-cover bg-center h-full" style="background-image: url('./Images/c3.png');">
+            <p class="text-thirdc font-manrope text-xl font-medium lg:text-3xl lg:font-extrabold text-center flex items-center justify-center h-full">
+              90%
+            </p></div>
+         
+        </div>
+        <h1 class="text-center text-thirdc font-manrope text-xl font-semibold ">Senior Player</h1>
+        <p class="text-center text-thirdc font-manrope text-lg text-base"> More than 350  well-trained Experienced and Cooperative seniors players available here</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 lg:w-32 lg:h-32  rounded-full overflow-hidden mb-2">
+          <div class="bg-cover bg-center h-full" style="background-image: url('./Images/c4.png');">
+            <p class="text-thirdc font-manrope text-xl font-medium lg:text-3xl lg:font-extrabold text-center flex items-center justify-center h-full">
+              80%
+            </p></div>
+         
+        </div>
+        <h1 class="text-center text-thirdc font-manrope text-xl font-semibold ">Training Ground</h1>
+        <p class="text-center text-thirdc font-manrope text-lg text-base">We have 10 training grounds</p>
+      </div>
+     </div>
+      
+
+      
     </header>
 
-    <main class="container mx-auto">
+    <main class="container mx-auto"></main>
 
-    </main>
-
-    <footer>
-
-    </footer>
-    
-</body>
+    <footer></footer>
+  </body>
 </html>
